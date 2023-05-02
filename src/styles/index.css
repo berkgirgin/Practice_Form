@@ -1,0 +1,95 @@
+:root {
+  --menu-item-padding: 8px;
+  --generic-border-radius: 12px;
+  --menu-main-content-gap: 4rem;
+
+  --gold-color: #ca8a04;
+  --gold-color-hover: #eab308;
+  --white-color: #e8e6e3;
+  --border_color_grey: #858585;
+  --border_radius: 10px;
+
+  color: var(--white-color);
+
+  --contact-form-gap: 0.8rem;
+  --background-color: #181a1b;
+
+  --footer-height: 1.8rem;
+
+  --form_border: 2px var(--border_color_grey) solid;
+}
+
+body {
+  background-color: darkgray;
+  color: var(--white-color);
+}
+
+.form {
+  background-color: var(--background-color);
+  border: var(--form_border);
+  font-size: 1rem;
+  border-radius: var(--border_radius);
+
+  width: 800px;
+  max-width: 80%;
+  height: 400px;
+  max-height: 80%;
+  padding: 40px 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--form_border);
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+.form header button {
+  /* background-color: transparent; */
+  color: var(--background-color);
+}
+
+.form .form_row {
+  display: flex;
+  gap: 8px;
+}
+
+.form .form_submit {
+  align-self: center;
+  padding: 4px 12px;
+  margin-top: 20px;
+  color: var(--background-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form .form_author,
+.form .form_title {
+  align-self: center;
+  width: 70px;
+}
+
+.form .error_field {
+  color: pink;
+}
+
+.form input {
+  border-radius: var(--border_radius);
+  border: 2px var(--background-color) solid;
+  padding: 12px;
+  outline: none;
+}
+
+.form input.valid {
+  border-color: green;
+}
+.form input.invalid {
+  border-color: red;
+}

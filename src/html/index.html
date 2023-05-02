@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Form</title>
+  </head>
+  <body>
+    <h1>welcome to my practice form</h1>
+
+    <form class="form">
+      <header>
+        <div>My Practice Form</div>
+        <button type="button" class="button close_form_button">&#x2716;</button>
+      </header>
+      <div class="form_row">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <div class="email error_field"></div>
+      </div>
+      <div class="form_row">
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country" />
+        <div class="country error_field"></div>
+      </div>
+      <div class="form_row">
+        <label for="zip_code">ZIP code:</label>
+        <input type="text" name="zip_code" id="zip_code" />
+        <div class="zip_code error_field"></div>
+      </div>
+      <div class="form_row">
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" />
+        <div class="password error_field"></div>
+      </div>
+      <div class="form_row">
+        <label for="password_confirm">Confirm password:</label>
+        <input type="text" name="password_confirm" id="password_confirm" />
+        <div class="password_confirm error_field"></div>
+      </div>
+      <button class="button form_submit" type="submit">Submit form</button>
+    </form>
+  </body>
+</html>
